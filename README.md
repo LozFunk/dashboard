@@ -16,7 +16,7 @@ A user-friendly dashboard designed as part of **The Odin Project** curriculum. T
 
 ## Live Demo
 
-View the live site: [Live Dashboard](https://lozfunk.github.io/Dashboard/)
+View the live site: [Live Dashboard](https://lozfunk.github.io/dashboard/)
 
 ## Technologies Used
 
