@@ -359,6 +359,37 @@ main{
     li a span{
         display: none;
     }
+
+    .sidebar ul li a::after {
+        content: attr(data-tooltip); 
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 100;
+        
+        background-color: #f05d5e;
+        color: whitesmoke;
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+        transition: opacity 0.3s;
+
+        left: 85%; 
+        top: 50%;
+        transform: translateY(-50%) translateX(10px); 
+        pointer-events: none; 
+    }
+
+    
+    .sidebar ul li a:hover::after {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    
+    .sidebar ul li a {
+        position: relative; 
+    }
 }
 
 @media (max-width: 730px){
